@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/main.css" />
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<title>Kodland Digital Test</title>
+	</head>
+	<body>
+		<!-- NAVBAR -->
+		<nav class="navbar">
+			<a href="#" class="navbar__brand link-dark">kodland Indonesia</a>
+			<div class="humberger__btn">
+				<i class="bx bx-menu"></i>
+			</div>
+			<ul class="navbar__link">
+				<li onclick="goHome()"><div class="navbar__link__list link-dark">Home</div></li>
+				<li onclick="goTentang()"><div class="navbar__link__list link-dark">Tentang</div></li>
+				<li onclick="goAturan()"><div class="navbar__link__list link-dark">Aturan</div></li>
+
+				<!-- <li class="active"><a href="#" class="navbar__link__list link-dark">Home</a></li>
+				<li ><a href="" class="navbar__link__list link-dark" >Tentang</a></li>
+				<li><a href="#" class="navbar__link__list link-dark">Aturan</a></li> -->
+			</ul>
+		</nav>
+		<!-- END NAVBAR -->
+
+		<!-- MAIN CONTENT -->
+		<main>
+			<section class="home__content" id="home">
+				<div class="home__content__text">
+					<h1>POP IT!</h1>
+					<p>Mainan anti-stres terbaik adalah bungkus gelembung tanpa akhir!</p>
+					<button class="home__content__btn" onclick="goMembeli()">MEMBELI</button>
+				</div>
+				<img src="images/background.png" alt="" class="home__image" />
+			</section>
+			<section class="second__content" id="tentang">
+				<div class="second__content__text">
+					<h2>Apa Pop Itu ?</h2>
+					<p>Pop It secara harfiah disebut meledak, ini adalah tempat penampungan Mainan anak-anak, sebuah proses yang dapat dibandingkan dengan meledaknya film pembungkus gelembung udara.</p>
+				</div>
+			</section>
+			<section class="third__content" id="membeli">
+				<div class="third__content__data">
+					<h2>Pilih Pop-It Anda !</h2>
+					<div class="third__card">
+						<div class="third__card__content">
+							<img src="images/square.png" alt="" />
+							<p>Persegi Warna Warni</p>
+							<button class="card__button" onclick="goDetailWarna()">Detail</button>
+						</div>
+						<div class="third__card__content">
+							<img src="images/amongus.png" alt="" />
+							<p>Amongus</p>
+							<button class="card__button" onclick="goDetailAmongUs()">Detail</button>
+						</div>
+						<div class="third__card__content">
+							<img src="images/round.png" alt="" />
+							<p>Bulat Warna Warni</p>
+							<button class="card__button" onclick="goDetailWarni()">Detail</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="four__content" id="aturan">
+				<img src="images/bg-grid.png" alt="" class="img__bg" />
+				<div class="four__content__text">
+					<h2>Aturan Permainan</h2>
+					<p>pemukim yang menentukan dan mash nari, pergi untuk menyelesaikan opd cogortsy di ali, Anda dapat menekan semuanya sekaligus - dan z pup okie nomeo promeo chic ima beberapa cara, jika mereka tidak tepat di sebelah tugas, Anda akan menyimpan / Kim doro</p>
+				</div>
+				<div class="four__content__image">
+					<img src="images/photo.jpg" alt="" />
+				</div>
+			</section>
+			<footer></footer>
+		</main>
+		<!-- END MAIN CONTENT -->
+
+		<!-- FOOTER -->
+		<footer>
+			<ul class="footer__link">
+				<li><a href="#" class="footer__brand link-white">kodland Indonesia</a></li>
+
+				<!-- <li class="active"><a href="#" class="footer__link__list link-white" onclick="goMembeli()">Membeli</a></li>
+				<li><a href="#" class="footer__link__list link-white" onclick="goAturan()">Aturan</a></li>
+				<li><a href="#" class="footer__link__list link-white" onclick="goTentang()">Tentang</a></li>
+				<li><a href="#" class="footer__link__list link-white" onclick="goHome()">Home</a></li> -->
+
+				<li class="active"><div class="footer__link__list link-white" onclick="goMembeli()">Membeli</div></li>
+				<li><div class="footer__link__list link-white" onclick="goAturan()">Aturan</div></li>
+				<li><div class="footer__link__list link-white" onclick="goTentang()">Tentang</div></li>
+				<li><div class="footer__link__list link-white" onclick="goHome()">Home</div></li>
+			</ul>
+		</footer>
+		<!-- END FOOTER -->
+		<!-- MODAL Detail -->
+		<div id="modalDetailAmongUs" class="modal">
+			<!-- Modal content -->
+			<div class="modal__content">
+				<span class="closeAmong close">&times;</span>
+				<img src="images/amongus.png" alt="" />
+				<hr />
+				<h4>Harga</h4>
+				<h2>Rp. 30.000</h2>
+			</div>
+		</div>
+		<div id="modalDetailWarna" class="modal">
+			<!-- Modal content -->
+			<div class="modal__content">
+				<span class="closeWarna close">&times;</span>
+				<img src="images/square.png" alt="" />
+				<hr />
+				<h4>Harga</h4>
+				<h2>Rp. 30.000</h2>
+			</div>
+		</div>
+		<div id="modalDetailWarni" class="modal">
+			<!-- Modal content -->
+			<div class="modal__content">
+				<span class="closeWarni close">&times;</span>
+				<img src="images/round.png" alt="" />
+				<hr />
+				<h4>Harga</h4>
+				<h2>Rp. 30.000</h2>
+			</div>
+		</div>
+		<script src="script/main.js"></script>
+	</body>
+</html>
