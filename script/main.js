@@ -17,24 +17,6 @@ function goHome() {
 	document.getElementById("home").scrollIntoView()
 }
 
-const allNav = document.querySelectorAll(".navbar-link")
-allNav.forEach((item) => {
-	const a = item.parentElement.querySelector("li:first-child")
-	a.addEventListener("click", function (e) {
-		e.preventDefault()
-
-		if (!this.classList.contains("active")) {
-			allNav.forEach((i) => {
-				const aLink = i.parentElement.querySelector("li:first-child")
-
-				aLink.classList.remove("active")
-			})
-		}
-
-		this.classList.toggle("active")
-	})
-})
-
 const Among = document.getElementById("modalDetailAmongUs")
 const Warni = document.getElementById("modalDetailWarni")
 const Warna = document.getElementById("modalDetailWarna")
